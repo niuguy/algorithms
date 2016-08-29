@@ -12,8 +12,8 @@ void quickSort(int arr[], int left, int right){
 int partition(int arr[], int left, int right){
 	int pivot = (left + right) /2 ;
 	while(left < = right){
-		while(arr[left] <= arr[pivot]) left++;
-		while(arr[right]>= arr[pivot]) right--;
+		while(arr[left] < arr[pivot]) left++;
+		while(arr[right] > arr[pivot]) right--;
 		if(left <= right){
 			swap(arr, left, right);
 			left++;
